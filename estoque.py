@@ -21,3 +21,48 @@
 # - Remover produto;
 # - Atualizar quantidade de produto;
 # - Sair.
+
+
+def adicionar_produto():
+    if nome in estoque:
+        return ('Erro: Produto já cadastrado.')
+    else:
+        estoque[nome] = ({"quantidade":quantidade, "preço":preco})
+        return(f"Produto '{nome}' adicionado com sucesso!")
+
+
+def listar_produtos():
+
+
+def remover_produto():
+
+
+def atualizar_quantidade_produtos():
+
+
+def menu():
+    print(
+        "\n1 - Adicionar produto",
+        "\n2 - Listar produtos",
+        "\n3 - Remover produto",
+        "\n4 - Atualizar quantidade de produto",
+        "\n5 - Sair"
+    )
+
+
+def main():
+    estoque = {}
+    while True:
+        print(menu)
+        opcao = input("Digite a opção desejada: ")
+
+        if opcao == "1":
+            nome = input("Digite o nome do produto: ")
+            quantidade = int(input("Digite a quantidade do produto: "))
+            preco = float(input("Digite o preço do produto: "))
+            print(adicionar_produto(estoque, nome, quantidade, preco))
+        elif opcao == "2":
+
+
+if __name__ == "__main__":
+    main()
